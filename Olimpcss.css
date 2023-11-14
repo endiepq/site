@@ -1,0 +1,266 @@
+body, html {
+    background-color: #18171c;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-fixed {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #18171c;
+    color: #fff;
+    text-align: center;
+    height: 100vh; /* Your desired height */
+}
+.hero-section button {
+    background-color: #ffc107; /* Bootstrap's warning color for reference */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section button:hover {
+    background-color: #e0a800; /* A darker shade for hover effect */
+}
+
+.content {
+    color: #fff;
+    background-color: #18171c;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    max-width: 22%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.column img {
+    width: 50%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.column h3 {
+    margin: 8px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        max-width: 100%;
+    }
+}
+.space{
+  height: 20vh;
+}
+.events {
+  color: #fff;
+  background-color: #18171c;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Изменено на column для вертикального расположения */
+  align-items: center;
+  width: 100%;
+}
+
+.text-section {
+margin-left: 25%;
+flex-basis: 20%;
+}
+
+.image-section {
+flex-basis: 50%;
+margin-right: 15%;
+}
+
+.image-section img {
+width: auto; /* Ширина изображения будет автоматически подстраиваться */
+height: 30vh; /* Пример фиксированной высоты, можно изменить по желанию */
+object-fit: cover; /* Этот стиль гарантирует, что изображение заполнит блок, сохраняя пропорции */
+border-radius: 20%;
+}
+
+.slides {
+display: flex;
+flex-direction: row;
+}
+
+.slide {
+display: none; /* Скрыть слайды */
+flex-direction: row; /* Горизонтальное расположение элементов */
+justify-content: space-between; /* Равномерное распределение элементов */
+align-items: center; /* Выравнивание элементов по центру */
+}
+
+.slide.active {
+display: flex; /* Показать активный слайд */
+}
+
+.indicators {
+margin-top: 2%;
+text-align: center;
+}
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+background-color: #717171;
+}
+.dot.active{
+background-color: #717180;
+}
+.slide-button{
+background-color: #ffc107; /* Bootstrap's warning color for reference */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.slide-button:hover{
+background-color: #e0a800;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+  }
+  
+  .gallery-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px; /* Добавляем отступ между изображениями в блоке */
+  }
+  
+  .gallery-image {
+    width: calc(16.66% - 20px); /* Установим ширину, чтобы каждое изображение занимало примерно треть блока */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery-image img {
+    width: 100%; /* Полная ширина контейнера */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-image:hover img {
+    transform: scale(1.1);
+  }
+  
+  .gallery-image:hover .description {
+    opacity: 1;
+  }
+  
+  .description {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%; /* Полная ширина контейнера */
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .feedback-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+}
+
+.feedback-form, .company-info {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.feedback-form h2, .company-info h2 {
+    margin: 0 0 15px 0;
+    color: white
+}
+.company-info p{
+    color: white
+}
+
+input[type="text"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feedback-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: white;
+    cursor: pointer;
+}
+
+.feedback-button:hover {
+    background-color: #e0a800;
+}
+.blocks{
+    text-align: center;
+    color: white;
+}

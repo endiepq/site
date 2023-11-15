@@ -4,7 +4,45 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
+.nav-toggle {
+    display: none;
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav {
+        margin-top: 0;
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background-color: #fff;
+      width: 100%;
+      color: #333; /* Или другой контрастный цвет */
+      text-decoration: none;
+      width: 100%; /* Или другой подходящий процент/фиксированный размер */
+      box-sizing: border-box; /* Учитывать padding в общем размере */
+    }
+  
+    .nav a {
+      display: block;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      padding: 5px 15px;
+      font-size: 14px; /* Уменьшенный размер шрифта */
+      line-height: 1.2;
+    }
+    .nav-visible {
+        display: block;
+      }
+  }
 .header-fixed {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -14,6 +52,7 @@ body, html {
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding-bottom: 0;
 }
 
 nav {
@@ -171,6 +210,27 @@ background-color: #ffc107; /* Bootstrap's warning color for reference */
 .slide-button:hover{
 background-color: #e0a800;
 }
+
+@media (max-width: 768px) {
+    .text-section {
+        margin-left: 5%;
+        flex-basis: 70%;
+      }
+    
+      .image-section {
+        flex-basis: 100%;
+        margin-right: 0;
+      }
+    
+      .image-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+      }
+    
+    
+    /* Дополнительные стили для адаптации макета */
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -187,7 +247,7 @@ background-color: #e0a800;
   }
   
   .gallery-image {
-    width: calc(16.66% - 20px); /* Установим ширину, чтобы каждое изображение занимало примерно треть блока */
+    width: calc(33.33% - 20px); /* Установим ширину, чтобы каждое изображение занимало примерно треть блока */
     position: relative;
     overflow: hidden;
   }

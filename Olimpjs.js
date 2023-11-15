@@ -2,7 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let slides = document.querySelectorAll(".slide");
     let indicators = document.querySelector(".indicators");
     let currentSlide = 0;
-
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+  
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-visible');
+    })
+    
     function showSlide(index) {
         slides[currentSlide].classList.remove('active');
         slides[index].classList.add('active');

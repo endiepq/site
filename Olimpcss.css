@@ -337,7 +337,7 @@ input[type="text"], input[type="tel"], textarea {
 }
 
 .feedback-form, .company-info {
-    width: 95%; /* Задаем полную ширину для маленьких экранов */
+    width: 93%; /* Задаем полную ширину для маленьких экранов */
     margin-bottom: 20px; /* Добавляем нижний отступ между элементами */
 }
 .feedback-form input, .feedback-form textarea{

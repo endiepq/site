@@ -329,3 +329,18 @@ input[type="text"], input[type="tel"], textarea {
     text-align: center;
     color: white;
 }
+@media (max-width: 768px) {
+  .feedback-container {
+      flex-direction: column;
+      padding: 10px; /* Добавляем отступы вокруг контейнера */
+  }
+
+  .feedback-form, .company-info {
+      width: 95%; /* Задаем полную ширину для маленьких экранов */
+      margin-bottom: 20px; /* Добавляем нижний отступ между элементами */
+  }
+  .feedback-form input, .feedback-form textarea{
+    width: calc(100% - 20px); /* Вычитаем левый и правый отступы */
+    box-sizing: border-box; /* Гарантируем, что ширина включает внутренние отступы и границы */
+}
+}

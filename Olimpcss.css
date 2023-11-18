@@ -1,144 +1,144 @@
 body, html {
-    background-color: #18171c;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  background-color: #18171c;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 .nav-toggle {
+  display: none;
+  font-size: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav {
+      margin-top: 0;
     display: none;
-    font-size: 30px;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .nav-toggle {
-      display: block;
-    }
-  
-    .nav {
-        margin-top: 0;
-      display: none;
-      position: absolute;
-      right: 0;
-      top: 60px;
-      background-color: #fff;
-      width: 100%;
-      color: #333; /* Или другой контрастный цвет */
-      text-decoration: none;
-      width: 100%; /* Или другой подходящий процент/фиксированный размер */
-      box-sizing: border-box; /* Учитывать padding в общем размере */
-    }
-  
-    .nav a {
-      display: block;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-      padding: 5px 15px;
-      font-size: 14px; /* Уменьшенный размер шрифта */
-      line-height: 1.2;
-    }
-    .nav-visible {
-        display: block;
-      }
-  }
-.header-fixed {
+    position: absolute;
+    right: 0;
+    top: 60px;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    height: 50px;
-    line-height: 50px;
-    position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 1000;
-    padding-bottom: 0;
+    color: #333; /* Или другой контрастный цвет */
+    text-decoration: none;
+    width: 100%; /* Или другой подходящий процент/фиксированный размер */
+    box-sizing: border-box; /* Учитывать padding в общем размере */
+  }
+
+  .nav a {
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 15px;
+    font-size: 14px; /* Уменьшенный размер шрифта */
+    line-height: 1.2;
+  }
+  .nav-visible {
+      display: block;
+    }
+}
+.header-fixed {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-bottom: 0;
 }
 
 nav {
-    text-align: center;
+  text-align: center;
 }
 
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #18171c;
-    color: #fff;
-    text-align: center;
-    height: 80vh; /* Your desired height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #18171c;
+  color: #fff;
+  text-align: center;
+  height: 80vh; /* Your desired height */
 }
 .hero-section button {
-    background-color: #ffc107; /* Bootstrap's warning color for reference */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #ffc107; /* Bootstrap's warning color for reference */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .hero-section button:hover {
-    background-color: #e0a800; /* A darker shade for hover effect */
+  background-color: #e0a800; /* A darker shade for hover effect */
 }
 
 .content {
-    color: #fff;
-    background-color: #18171c;
-    text-align: center;
-}
-
-.row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 1;
-    max-width: 22%;
-    padding: 0 15px;
-    box-sizing: border-box;
-    margin-bottom: 16px;
-}
-
-.column img {
-    width: 50%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
-
-.column h3 {
-    margin: 8px 0;
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-        max-width: 100%;
-    }
-}
-.space{
-  height: 20vh;
-}
-.events {
   color: #fff;
   background-color: #18171c;
   text-align: center;
+}
+
+.row {
   display: flex;
-  flex-direction: column; /* Изменено на column для вертикального расположения */
-  align-items: center;
-  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  max-width: 22%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.column img {
+  width: 50%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.column h3 {
+  margin: 8px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+      max-width: 100%;
+  }
+}
+.space{
+height: 20vh;
+}
+.events {
+color: #fff;
+background-color: #18171c;
+text-align: center;
+display: flex;
+flex-direction: column; /* Изменено на column для вертикального расположения */
+align-items: center;
+width: 100%;
 }
 
 .text-section {
@@ -198,149 +198,155 @@ background-color: #717180;
 }
 .slide-button{
 background-color: #ffc107; /* Bootstrap's warning color for reference */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .slide-button:hover{
 background-color: #e0a800;
 }
 
 @media (max-width: 768px) {
-    .text-section {
-        margin-left: 5%;
-        flex-basis: 70%;
-      }
-    
-      .image-section {
-        flex-basis: 100%;
-        margin-right: 0;
-      }
-    
-      .image-section img {
-        width: 100%;
-        height: auto;
-        border-radius: 10%;
-      }
-    
-    
-    /* Дополнительные стили для адаптации макета */
+  .text-section {
+      margin-left: 5%;
+      flex-basis: 70%;
+    }
+  
+    .image-section {
+      flex-basis: 100%;
+      margin-right: 0;
+    }
+  
+    .image-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10%;
+    }
+  
+  
+  /* Дополнительные стили для адаптации макета */
 }
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    color: white;
-  }
-  
-  .gallery-block {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 10px; /* Добавляем отступ между изображениями в блоке */
-  }
-  
-  .gallery-image {
-    width: calc(33.33% - 20px); /* Установим ширину, чтобы каждое изображение занимало примерно треть блока */
-    position: relative;
-    overflow: hidden;
-  }
-  @media (min-width: 1024px) {
-    .gallery-image {
-        max-width: 300px; /* или другое подходящее значение */
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  color: white;
 }
-  
-  .gallery-image img {
-    width: 100%; /* Полная ширина контейнера */
-    height: auto;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-image:hover img {
-    transform: scale(1.1);
-  }
-  
-  .gallery-image:hover .description {
-    opacity: 1;
-  }
-  
-  .description {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    width: 100%; /* Полная ширина контейнера */
-    text-align: center;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
 
-  .feedback-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    padding: 20px;
+.gallery-block {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px; /* Добавляем отступ между изображениями в блоке */
+}
+
+.gallery-image {
+  width: calc(33.33% - 20px); /* Установим ширину, чтобы каждое изображение занимало примерно треть блока */
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .gallery-image {
+      max-width: 300px; /* или другое подходящее значение */
+  }
+}
+
+.gallery-image img {
+  width: 100%; /* Полная ширина контейнера */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-image:hover .description {
+  opacity: 1;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%; /* Полная ширина контейнера */
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 20px;
 }
 
 .feedback-form, .company-info {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-    width: 45%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  width: 45%;
 }
 
 .feedback-form h2, .company-info h2 {
-    margin: 0 0 15px 0;
-    color: white
+  margin: 0 0 15px 0;
+  color: white
 }
 .company-info p{
-    color: white
+  color: white
 }
 
 input[type="text"], input[type="tel"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .feedback-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffc107;
-    color: white;
-    cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffc107;
+  color: white;
+  cursor: pointer;
 }
 
 .feedback-button:hover {
-    background-color: #e0a800;
+  background-color: #e0a800;
 }
 .blocks{
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 @media (max-width: 768px) {
-  .feedback-container {
-      flex-direction: column;
-      padding: 10px; /* Добавляем отступы вокруг контейнера */
-  }
-
-  .feedback-form, .company-info {
-      width: 95%; /* Задаем полную ширину для маленьких экранов */
-      margin-bottom: 20px; /* Добавляем нижний отступ между элементами */
-  }
-  .feedback-form input, .feedback-form textarea{
-    width: calc(100% - 20px); /* Вычитаем левый и правый отступы */
-    box-sizing: border-box; /* Гарантируем, что ширина включает внутренние отступы и границы */
+.feedback-container {
+    flex-direction: column;
+    padding: 10px; /* Добавляем отступы вокруг контейнера */
 }
+
+.feedback-form, .company-info {
+    width: 95%; /* Задаем полную ширину для маленьких экранов */
+    margin-bottom: 20px; /* Добавляем нижний отступ между элементами */
+}
+.feedback-form input, .feedback-form textarea{
+  width: calc(100% - 20px); /* Вычитаем левый и правый отступы */
+  box-sizing: border-box; /* Гарантируем, что ширина включает внутренние отступы и границы */
+}
+}
+
+/* Добавленные стили для выделения активного элемента в навигационной панели */
+.nav a.active {
+  border: 2px solid #ffc107; /* Пример обводки красным цветом */
+  padding: 5px; /* Добавляем немного отступа вокруг текста */
 }

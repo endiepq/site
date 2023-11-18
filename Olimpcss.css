@@ -48,7 +48,7 @@ body, html {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   height: 5vh;
   min-height: 50px;
-  line-height: 5vh;
+  line-height: 50px;
   position: fixed;
   top: 0;
   width: 100%;

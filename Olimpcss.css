@@ -251,6 +251,11 @@ background-color: #e0a800;
     position: relative;
     overflow: hidden;
   }
+  @media (min-width: 1024px) {
+    .gallery-image {
+        max-width: 300px; /* или другое подходящее значение */
+    }
+}
   
   .gallery-image img {
     width: 100%; /* Полная ширина контейнера */

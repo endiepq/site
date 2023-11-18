@@ -74,7 +74,7 @@ nav a {
     background-color: #18171c;
     color: #fff;
     text-align: center;
-    height: 100vh; /* Your desired height */
+    height: 80vh; /* Your desired height */
 }
 .hero-section button {
     background-color: #ffc107; /* Bootstrap's warning color for reference */

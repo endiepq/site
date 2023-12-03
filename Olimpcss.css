@@ -289,6 +289,7 @@ background-color: #e0a800;
   justify-content: space-around;
   align-items: start;
   padding: 20px;
+  background-color: #f8f32b;
 }
 
 .feedback-form, .company-info {
@@ -296,13 +297,14 @@ background-color: #e0a800;
   padding: 20px;
   border-radius: 5px;
   width: 45%;
+  background-color: #18171c;
 }
 
 .feedback-form h2, .company-info h2 {
   margin: 0 0 15px 0;
   color: white
 }
-.company-info p{
+.company-info h3{
   color: white
 }
 

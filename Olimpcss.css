@@ -311,9 +311,10 @@ background-color: #e0a800;
 input[type="text"], input[type="tel"], textarea {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 0px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 18px;
 }
 
 .feedback-button {

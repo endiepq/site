@@ -142,6 +142,15 @@ align-items: center;
 width: 100%;
 }
 
+@media (max-width: 768px)
+{
+  .events
+  {
+    flex-direction: column;
+    padding: 10px; /* Добавляем отступы вокруг контейнера */
+  }
+}
+
 .text-section {
 margin-left: 25%;
 flex-basis: 20%;

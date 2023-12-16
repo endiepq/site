@@ -346,6 +346,7 @@ input[type="text"], input[type="tel"], textarea {
 .feedback-container {
     flex-direction: column;
     padding: 10px; /* Добавляем отступы вокруг контейнера */
+    background-color: #ffc107
 }
 
 .feedback-form, .company-info {
